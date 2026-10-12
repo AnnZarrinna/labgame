@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гра «21» — Лабораторна робота № 9</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="game-card">
+    <h2>Гра «21»</h2>
+    <div class="scores-row">
+      <div class="player-box">
+        <div class="player-name" id="user-label">User</div>
+        <div class="score-badge" id="user-score">0</div>
+      </div>
+      <div class="info-box">
+        <div class="attempt-counter" id="attempt-info">Спроба 0 з 3</div>
+        <button id="generate-btn" class="btn-generate">Generate</button>
+      </div>
+      <div class="player-box">
+        <div class="player-name">Computer</div>
+        <div class="score-badge" id="computer-score">0</div>
+      </div>
+    </div>
+    <div class="cards-display">
+      <div class="card-slot" id="user-card-slot">
+        <div class="card-placeholder">?</div>
+      </div>
+      <div class="card-slot" id="computer-card-slot">
+        <div class="card-placeholder">?</div>
+      </div>
+    </div>
+    <div id="result-message" class="result-message"></div>
+    <button id="restart-btn" class="btn-restart hidden">Зіграти знову</button>
+  </div>
+</body>
+</html>
